@@ -4,25 +4,59 @@ import './App.css';
 import Card from './components/Card';
 
 function App() {
-  let projects = [
-    { name: 'Project Ish', likes: 1460 },
-    { name: 'The Kush Kode', likes: 32222 },
-    { name: 'Goat Web Design', likes: 18700 },
-    { name: 'BubbaKushner.com', likes: 3890000000 },
-    { name: 'The Real Facebook', likes: 7238 },
-    { name: 'Forrest Gump 2: The Return of Bubba', likes: 23451123 },
-  ];
-
   return (
     <div className="App">
-      {projects.map((project, index) => {
-        return <Card 
-        name={project.name} 
-        key={index} 
-        likes={project.likes}></Card>
-      })}
+      <header className="App-header">
+        <h1>Memory Game</h1>
+        <h4>Match Cards To Win!</h4>
+      </header>
+      <main>
+        <div className="Card-container">
+          <Card></Card>
+          <Card></Card>
+          <Card></Card>
+          <Card></Card>
+        </div>
+        <div className="Card-container">
+          <Card></Card>
+          <Card></Card>
+          <Card></Card>
+          <Card></Card>
+        </div>
+        <div className="Card-container">
+          <Card></Card>
+          <Card></Card>
+          <Card></Card>
+          <Card></Card>
+        </div>
+        <div className="Card-container">
+          <Card></Card>
+          <Card></Card>
+          <Card></Card>
+          <Card></Card>
+        </div>
+      </main>
     </div>
   );
 };
+
+// let projects = [
+//   { name: 'Project Ish', likes: 1460 },
+//   { name: 'The Kush Kode', likes: 32222 },
+//   { name: 'Goat Web Design', likes: 18700 },
+//   { name: 'BubbaKushner.com', likes: 3890000000 },
+//   { name: 'The Real Facebook', likes: 7238 },
+//   { name: 'Forrest Gump 2: The Return of Bubba', likes: 23451123 },
+// ];
+
+{/* return (
+  <div>
+  {projects.map((project, index) => {
+    return <Card
+      name={project.name}
+      key={index}
+      likes={project.likes}></Card>
+  })}
+</div>) */}
 
 export default App;

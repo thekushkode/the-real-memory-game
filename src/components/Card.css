@@ -1,7 +1,17 @@
 .Card {
-    max-width: 30%;
+    max-width: 20%;
     border: 2px solid darkred;
     box-shadow: 0 5px 5px black;
-    padding: 10px;
-    margin: 10px;
+    padding: 10px 0;
+    margin: 20px;
+}
+
+.Goat-img {
+    width: 75px;
+}
+
+.Card-container {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
 }
