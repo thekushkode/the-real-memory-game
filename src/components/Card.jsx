@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import './Card.css';
+import numeral from 'numeral';
 
 class Card extends Component {
     render() {
-        //const title = 'Kush is the best';
         return (
             <div className="Card">
                 { this.props.name }
                 <br></br>
                 { this.props.likes ? (
-                <sup>likes: { this.props.likes }</sup>
+                <sup>likes: { numeral(this.props.likes).format('0.0a') }</sup>
                 ) : ''}
             </div>
         )
