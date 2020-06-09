@@ -7,37 +7,34 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Memory Game</h1>
+        <h1>GWD Presents: Memory</h1>
         <h4>Match Cards To Win!</h4>
       </header>
       <main>
-        <div className="Card-front">
-
+        <div className="Card-container">
+          <Card></Card>
+          <Card></Card>
+          <Card></Card>
+          <Card></Card>
         </div>
-          <div className="Card-container">
-            <Card></Card>
-            <Card></Card>
-            <Card></Card>
-            <Card></Card>
-          </div>
-          <div className="Card-container">
-            <Card></Card>
-            <Card></Card>
-            <Card></Card>
-            <Card></Card>
-          </div>
-          <div className="Card-container">
-            <Card></Card>
-            <Card></Card>
-            <Card></Card>
-            <Card></Card>
-          </div>
-          <div className="Card-container">
-            <Card></Card>
-            <Card></Card>
-            <Card></Card>
-            <Card></Card>
-          </div>
+        <div className="Card-container">
+          <Card></Card>
+          <Card></Card>
+          <Card></Card>
+          <Card></Card>
+        </div>
+        <div className="Card-container">
+          <Card></Card>
+          <Card></Card>
+          <Card></Card>
+          <Card></Card>
+        </div>
+        <div className="Card-container">
+          <Card></Card>
+          <Card></Card>
+          <Card></Card>
+          <Card></Card>
+        </div>
       </main>
     </div>
   );
