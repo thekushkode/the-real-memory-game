@@ -1,17 +1,56 @@
-.Card {
-    max-width: 20%;
-    border: 2px solid darkred;
-    box-shadow: 0 5px 5px black;
-    padding: 10px 0;
-    margin: 20px;
-}
-
 .Goat-img {
     width: 75px;
 }
 
-.Card-container {
+/* .Card-container {
     max-width: 100%;
     display: flex;
     justify-content: center;
+} */
+
+.Memory-inner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border-radius: 5px;
+    border: 3px solid darkred;
+    box-shadow: 0 5px 5px black;
+}
+
+.Card-back {
+    /* max-width: 20%;
+    border: 2px solid darkred;
+    box-shadow: 0 5px 5px black;
+    padding: 10px 0;
+    margin: 20px; */
+    background: rgb(204, 143, 143);
+}
+
+.Memorycard {
+    display: inline-block;
+    width: 150px;
+    height: 80px;
+    margin: 5px;
+    cursor: pointer;
+    position: relative;
+    perspective: 800px;
+}
+
+.Card-front {
+    font-size: 30px;
+    padding-top: 20px;
+    transform: rotateY(180deg);
+}
+
+.Card-front, .Card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.Memory-inner.Flipped {
+    transform: rotateY(180deg);
 }

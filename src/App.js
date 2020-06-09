@@ -14,7 +14,6 @@ function App() {
         <div className="Card-front">
 
         </div>
-        <div className="Card-back">
           <div className="Card-container">
             <Card></Card>
             <Card></Card>
@@ -39,7 +38,6 @@ function App() {
             <Card></Card>
             <Card></Card>
           </div>
-        </div>
       </main>
     </div>
   );
