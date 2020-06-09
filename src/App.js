@@ -11,29 +11,34 @@ function App() {
         <h4>Match Cards To Win!</h4>
       </header>
       <main>
-        <div className="Card-container">
-          <Card></Card>
-          <Card></Card>
-          <Card></Card>
-          <Card></Card>
+        <div className="Card-front">
+
         </div>
-        <div className="Card-container">
-          <Card></Card>
-          <Card></Card>
-          <Card></Card>
-          <Card></Card>
-        </div>
-        <div className="Card-container">
-          <Card></Card>
-          <Card></Card>
-          <Card></Card>
-          <Card></Card>
-        </div>
-        <div className="Card-container">
-          <Card></Card>
-          <Card></Card>
-          <Card></Card>
-          <Card></Card>
+        <div className="Card-back">
+          <div className="Card-container">
+            <Card></Card>
+            <Card></Card>
+            <Card></Card>
+            <Card></Card>
+          </div>
+          <div className="Card-container">
+            <Card></Card>
+            <Card></Card>
+            <Card></Card>
+            <Card></Card>
+          </div>
+          <div className="Card-container">
+            <Card></Card>
+            <Card></Card>
+            <Card></Card>
+            <Card></Card>
+          </div>
+          <div className="Card-container">
+            <Card></Card>
+            <Card></Card>
+            <Card></Card>
+            <Card></Card>
+          </div>
         </div>
       </main>
     </div>
