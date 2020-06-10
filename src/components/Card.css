@@ -34,8 +34,8 @@
 }
 
 .Card-front {
-    font-size: 30px;
-    padding-top: 20px;
+    font-size: 50px;
+    padding: 5px 10px;
     transform: rotateY(180deg);
 }
 
