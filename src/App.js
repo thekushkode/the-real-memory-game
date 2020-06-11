@@ -4,6 +4,7 @@ import Card from './components/Card';
 // import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 //import * as bs from 'react-bootstrap'; shouldnt really do this
+import Counter from './components/Counter';
 
 function generateDeck() {
   let symbols = ['🇺🇸', '🦠', '🖥', '🐐', '🦄', '💩', '😈', '🍆'];
@@ -110,6 +111,7 @@ class App extends Component {
             {cardsJSX.slice(12, 16)}
           </div>
         </main>
+        <Counter></Counter>
       </div>
     );
   };

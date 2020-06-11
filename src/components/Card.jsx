@@ -43,18 +43,3 @@ class Card extends Component {
 
 
 export default Card;
-
-
-// class Card extends Component {
-    //     render() {
-    //         return (
-    //             <div className="Card">
-    //                 { this.props.name }
-    //                 <br></br>
-    //                 { this.props.likes ? (
-    //                 <sup>likes: { numeral(this.props.likes).format('0.0a') }</sup>
-    //                 ) : ''}
-    //             </div>
-    //         )
-    //     }
-    // }
