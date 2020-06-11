@@ -52,9 +52,9 @@ class App extends Component {
       if (newPickedCards.length === 2) {
         let card1Index = newPickedCards[0];
         let card2Index = newPickedCards[1];
-        if (card1Index !== card2Index) {
+        if (newDeck[card1Index].symbol !== newDeck[card2Index].symbol) {
           // this.unflipCards(card1Index, card2Index);
-          setTimeout(() => {this.unflipCards(card1Index, card2Index)}, 1000)
+          setTimeout(() => { this.unflipCards(card1Index, card2Index) }, 1000)
         }
         newPickedCards = [];
       }
